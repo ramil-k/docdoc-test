@@ -14,14 +14,14 @@ export const ShippingInfo = ({ initialValues, onSubmit, hidden, formRef }) =>
   >{({values, touched, errors, ...state}) =>
     <Form className={styles.form}
           style={hidden ? {display: 'none'}: {}}>
-      <label className={[styles.label, styles.radio].join(' ')}>
+      <label className={[styles.label, styles.wide, styles.radio].join(' ')}>
         <Field name="required"
               type="radio"
               value="true"
               checked={values.required === "true"}></Field>
         Доставка
       </label>
-      <label className={[styles.label, styles.radio].join(' ')}>
+      <label className={[styles.label, styles.wide, styles.radio].join(' ')}>
         <Field name="required"
                type="radio"
                value="false"
